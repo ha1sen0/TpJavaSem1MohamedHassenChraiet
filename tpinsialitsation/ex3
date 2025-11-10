@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ex3 {
+    public static void main(String[] args) {
+        double c, k;
+        String a;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 'c' for Celsius or 'f' for Fahrenheit:");
+        a = sc.nextLine();
+
+        if (a.equalsIgnoreCase("c")) {
+            System.out.println("Enter the temperature in Celsius:");
+            c = sc.nextDouble();
+            k = c + 273.15;
+            System.out.println("Temperature in Kelvin: " + k);
+        } else if (a.equalsIgnoreCase("f")) {
+            System.out.println("Enter the temperature in Fahrenheit:");
+            double f = sc.nextDouble();
+            k = (f - 32) * 5/9 + 273.15;
+            System.out.println("Temperature in Kelvin: " + k);
+        } else {
+            System.out.println("Invalid input. Please enter 'c' or 'f'.");
+        }
+
+        
+    }
+}
