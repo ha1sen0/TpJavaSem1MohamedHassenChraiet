@@ -9,7 +9,7 @@ public class debgu {
         int n =sc.nextInt() ;
         int some=0;
         for (int i=1;i<=n;i++){
-            some=i+i;
+            some=some+i;
             
         }  System.out.println("la some des eniters de 1 a "+n+"est : "+some);
     }
