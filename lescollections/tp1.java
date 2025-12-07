@@ -9,7 +9,7 @@ public class tp1 {
         ArrayList<Integer> notes = new ArrayList<>();
         int n;
 
-      /* 
+       
         do {
             System.out.println("Saisir le nombre de notes (n>0) :");
             n = sc.nextInt();
@@ -74,7 +74,7 @@ public class tp1 {
             System.out.println("Liste apres: " + notes);
         } else {
             System.out.println("ne existe pas");
-        }*/
+        }
         ArrayList<String> etudiants = new ArrayList<>();
 
        
