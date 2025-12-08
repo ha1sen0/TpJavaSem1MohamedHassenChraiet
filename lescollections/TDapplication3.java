@@ -12,8 +12,7 @@ public class TDapplication3 {
         String [] sub = ph.split(" ");
         for(String word : sub) {
              if(phrase.containsKey(word)) {
-                int count = phrase.get(word);
-                phrase.put(word, count + 1);
+                phrase.put(word,phrase.get(word) + 1);
             } else {
                 phrase.put(word, 1);
             }
