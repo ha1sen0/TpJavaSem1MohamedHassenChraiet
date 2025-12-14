@@ -2,6 +2,7 @@ package lescollections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class TDcollections {
@@ -16,15 +17,19 @@ public class TDcollections {
         }
         
         Collections.sort(livre);
-        for(int i = 0; i < livre.size(); i++) {
-            if(livre.get(i).contains("a")) {
-                livre.remove(i);
-                i--;
-            }
         
-            
-        } System.out.println(livre);
+            Iterator <String > it = livre.iterator();
+
+            while(it.hasNext()){
+                 String k= it.next();
+                if(k.startsWith("A" )|| k.startsWith("a")){
+                    it.remove();
+                    }
+                }System.out.println(livre);
+        
+             
+        }
 
     }
     
-}
+
